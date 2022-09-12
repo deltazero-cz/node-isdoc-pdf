@@ -1,0 +1,43 @@
+{
+  "name": "isdoc-pdf",
+  "version": "0.1.0",
+  "description": "Create ISDOC - Czechia's standard invoice format for data exchange",
+  "author": "ΔO - David Obdržálek <david@deltazero.cz>",
+  "license": "ISC",
+  "keywords": [
+    "isdoc",
+    "isdocx",
+    "isdoc-pdf",
+    "pdf",
+    "pdfa",
+    "pdf/a",
+    "pdf/a-3"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "pretest": "tsc",
+    "test": "mocha tests --timeout 10000",
+    "build": "tsc -b",
+    "prepare": "npm run build"
+  },
+  "repository": "deltazero-cz/node-isdoc",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@deltazero/isdoc": "^0.1.1",
+    "jszip": "^3.10.1",
+    "pdf-lib": "^1.17.1",
+    "xsd-validator": "^1.0.2",
+    "isdoc-pdf-bash": "git+https://github.com/deltazero-cz/isdoc-pdf.git"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^16.0.0",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "typescript": "latest"
+  }
+}
