@@ -8,7 +8,7 @@ export default async function extractISDOC(pdf: Buffer|PDFDocument) : Promise<In
       : pdf
 
   const isdoc = PDFExtractAttachments(document)
-      .find(r => r.name === 'invoice.isdoc')
+      .find(r => r.name.match(/isdoc$/))
   if (!isdoc) return null
 
   return new Invoice(Buffer.from(isdoc.data))
@@ -19,5 +19,5 @@ export const hasISDOC = async (pdf: Buffer|PDFDocument) : Promise<boolean> => {
       ? await PDFDocument.load(pdf)
       : pdf
 
-  return !! PDFExtractAttachments(document).find(r => r.name === 'invoice.isdoc')
+  return !! PDFExtractAttachments(document).find(r => r.name.match(/isdoc$/))
 }

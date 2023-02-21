@@ -1,6 +1,6 @@
 {
   "name": "isdoc-pdf",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create ISDOC.PDF (PDF/A-3 with ISDOC attachment), create ISDOCX (ZIP archive with PDF and ISDOC) or extract ISDOC from PDF - Czechia's standard invoice format for data exchange",
   "author": "ΔO - David Obdržálek <david@deltazero.cz>",
   "license": "ISC",
