@@ -1,6 +1,6 @@
 {
   "name": "isdoc-pdf",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create ISDOC.PDF (PDF/A-3 with ISDOC attachment), create ISDOCX (ZIP archive with PDF and ISDOC) or extract ISDOC from PDF - Czechia's standard invoice format for data exchange",
   "author": "ΔO - David Obdržálek <david@deltazero.cz>",
   "license": "ISC",
@@ -26,10 +26,10 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "@deltazero/isdoc": "^0.1.1",
+    "@deltazero/isdoc": "^0.1.2",
     "jszip": "^3.10.1",
     "pdf-lib": "^1.17.1",
-    "xsd-validator": "^1.0.2",
+    "xsd-validator": "^1.1.0",
     "isdoc-pdf-bash": "git+https://github.com/deltazero-cz/isdoc-pdf.git"
   },
   "devDependencies": {
